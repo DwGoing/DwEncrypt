@@ -27,7 +27,7 @@ namespace DwEncrypt
         TwentyFour = 24
     }
 
-    public class LockManager
+    public class EncryptManager
     {
         private string[] _aesKeys;
         private Encoding _encoding;
@@ -47,7 +47,7 @@ namespace DwEncrypt
         /// </summary>
         /// <param name="mnemonicString"></param>
         /// <param name="passphrase"></param>
-        public LockManager(string mnemonicString, string passphrase = null, Encoding encoding = null)
+        public EncryptManager(string mnemonicString, string passphrase = null, Encoding encoding = null)
         {
             if (encoding == null)
                 _encoding = Encoding.UTF8;
@@ -59,7 +59,7 @@ namespace DwEncrypt
         /// </summary>
         /// <param name="mnemonicWords"></param>
         /// <param name="passphrase"></param>
-        public LockManager(string[] mnemonicWords, string passphrase = null, Encoding encoding = null)
+        public EncryptManager(string[] mnemonicWords, string passphrase = null, Encoding encoding = null)
         {
             if (encoding == null)
                 _encoding = Encoding.UTF8;
