@@ -1,6 +1,6 @@
 # DwEncrypt
 
-符合BIP39标准的加密SDK
+符合BIP39标准的加密SDK，用于通信加密。
 
 ### 0x1 初始化
 
